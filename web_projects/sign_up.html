@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0px;
+            padding:0px;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #0F0F0F;
+            color: #55a137;;
+        }
+
+        .card_container{
+            height: 300px;
+            width: 350px;
+            padding: 20px;
+            background-color: #232323;
+            border-radius: 10px;
+        }
+
+        h2{
+            text-align:center;
+            margin-bottom: 25px;
+        }
+
+        .form_container{
+            padding: 2px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        input{
+            padding:7px;
+            border-radius: 7px;
+            margin-bottom: 10px;
+        }
+
+        .small{
+            width: 44.5%;
+        }
+
+        .big{
+            width: 100%;
+        }
+
+        button{
+            padding:9px;
+            border-radius: 20px;
+            border: none;
+            width: 100%;
+            background-color: #55a137;
+        }
+
+        button:hover{
+            background-color: #5dd62c;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class = "card_container">
+        <h2>Signup</h2>
+        <form action="" class="form_container">
+            <input type="text" placeholder="First name" class = "small">
+            <input type="text" placeholder="Last name" class = "small">
+            <input type="text" placeholder="email" class="big">
+            <input type="text" placeholder="password" class="big">
+            <button type="submit"><b>Submit</b></button>
+        </form>
+    </div>
+</body>
+</html>

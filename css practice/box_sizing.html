@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            line-height: normal;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px;
+            border: 1px solid black;
+        }
+        .box{
+            height: 300px;
+            width: 300px;
+            padding: 20px;
+            margin: 50px;
+            border: 2px solid black;
+        }
+        .content-box{
+            box-sizing: content-box;
+            background-color: aquamarine;
+        }
+        .border-box{
+            box-sizing: border-box;
+            background-color: burlywood;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box content-box">
+        <h2>Content Box (Default)</h2>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias dolorum enim nihil earum molestiae, reprehenderit similique aliquid omnis amet at rerum, deserunt a possimus? Voluptas adipisci nihil labore repudiandae illum.
+        </p>
+    </div>
+    <div class="box border-box">
+        <h2>Border Box</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias dolorum enim nihil earum molestiae, reprehenderit similique aliquid omnis amet at rerum, deserunt a possimus? Voluptas adipisci nihil labore repudiandae illum.
+        </p>
+    </div>
+
+</body>
+</html>

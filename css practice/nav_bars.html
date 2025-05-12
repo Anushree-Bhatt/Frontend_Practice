@@ -4,61 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="nav_bars.css">
     <style>
-        body{
+        .nav2{
+            background-color: rgb(16, 117, 219);
+            width: 240px;
+            padding: 7px;
+        }
+        .nav2 ul{
             margin: 0px;
             padding: 0px;
-            height: 100vh;
-            background-color: rgb(224, 231, 234);
         }
-        .nav1 ul{
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            background-color: #263238;
-            padding: 20px;
-        }
-        .nav1 li{
-            display: inline;
-            position: relative;
-            transition: all 1s linear;
-        }
-        .nav1 a:hover{
-            background-color: #627f8d;
-            padding: 15px;
-            transform: scale(1);
-        }
-        .nav1 a {
-            text-decoration: none;
-            color: white;
-            padding: 10px 15px;
-        }    
-        .nav1 a:hover::after{
-            content: "abc";
-            position: absolute;
-            top: 35px;
-            left: 0px;
+        .nav2 li{
+            list-style-type: none;
+            margin-bottom: 8px;
             width: 100%;
-            padding: 5px;
-            box-sizing: border-box;
-            background-color: rgb(144, 164, 174, 1);
+            /* border: 1px solid white; */
+            /* box-sizing: border-box; */
         }
-        .button_1{
-            display: inline;
-            background-color: #627f8d;
-            padding: 14px;
-            border-radius: 5px;
-            color: white;
+        .nav2 a{
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: whitesmoke;
+            transition: all 50ms linear;
         }
-        .button_1:hover{
-            transform: scaleX(1.1);
+        .nav2 a:hover{
+            background-color: rgb(72, 134, 196);
+        }
+        .button_2{
+            display: block;
+            padding: 10px;
+            width: 100%;
+            background-color: rgb(72, 134, 196);
+            color: whitesmoke;
+            border: none;
+            font-family: serif;
+            font-size: 90%;
+        }
+        .button_2:hover{
             cursor: pointer;
+            background-color: rgb(138, 165, 195, 0.6);;
         }
 
     </style>
 </head>
 <body>
-    <div class="nav_container">
+    <div class="nav1_container">
         <h1>Variation 1: Horizontal with underline effect</h1>
         <nav class="nav1">
             <ul>
@@ -69,14 +61,14 @@
             </ul>
         </nav>
     </div>
-    <div>
+    <div class="nav2_container">
         <h1>Variation 2: Vertical with hover effect</h1>
-        <nav>
+        <nav class="nav2">
             <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Products</li>
-                <li><button>Login</button></li>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">PRODUCTS</a></li>
+                <li><button class="button_2">LOGIN</button></li>
             </ul>
         </nav>
     </div>

@@ -6,46 +6,51 @@
     <title>Document</title>
     <link rel="stylesheet" href="nav_bars.css">
     <style>
-        .nav2{
-            background-color: rgb(16, 117, 219);
-            width: 240px;
-            padding: 7px;
+        .nav3 ul{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgb(48, 133, 217);
+            /* padding: 15px; */
+            box-sizing: border-box;
         }
-        .nav2 ul{
-            margin: 0px;
-            padding: 0px;
+
+        .nav3 li{
+            list-style: none;
         }
-        .nav2 li{
-            list-style-type: none;
-            margin-bottom: 8px;
-            width: 100%;
-            /* border: 1px solid white; */
-            /* box-sizing: border-box; */
-        }
-        .nav2 a{
+
+        .nav3 a{
             display: block;
-            padding: 10px;
             text-decoration: none;
             color: whitesmoke;
-            transition: all 50ms linear;
+            padding: 20px;
+            box-sizing: border-box;
         }
-        .nav2 a:hover{
-            background-color: rgb(72, 134, 196);
+
+        .dropdown{
+            position: relative;
         }
-        .button_2{
+
+        .dropdown-content{
+            display: none;
+        }
+
+        .nav3 li>a:hover{
+            background-color: rgb(45, 103, 162);
+        }
+
+        .nav3 .dropdown:hover .dropdown-content{
             display: block;
-            padding: 10px;
-            width: 100%;
-            background-color: rgb(72, 134, 196);
-            color: whitesmoke;
-            border: none;
-            font-family: serif;
-            font-size: 90%;
+            position: absolute;
+            border: 1px solid black;
+            background-color: #454444;
+            min-width: 240px;
         }
-        .button_2:hover{
-            cursor: pointer;
-            background-color: rgb(138, 165, 195, 0.6);;
+
+        .nav3 .dropdown-content>a:hover {
+            background-color: rgb(44, 112, 181);
         }
+
 
     </style>
 </head>
@@ -72,15 +77,20 @@
             </ul>
         </nav>
     </div>
-    <div>
+    <div class="nav3_container">
         <h1>Variation 3: Horizontal with Dropdown effect</h1>
-        <nav>
+        <nav class="nav3">
             <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Products</li>
-                <li><button>Login</button></li>
-            </ul>
+                <li><a href="#">HOME</a></li>
+                <li class="dropdown"><a href="#">ABOUT</a>
+                    <div class="dropdown-content">
+                        <a href="#" style="padding-top: 20px;">OUR STORY</a>
+                        <a href="#">TEAM</a>
+                        <a href="#">CONTACT</a>
+                    </div></li>
+                <li><a href="#">PRODUCTS</a></li>
+                <li><button class="button_3">LOGIN</button></li>
+            </ul>   
         </nav>
     </div>
 </body>

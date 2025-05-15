@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            background: linear-gradient(135deg, #e22ebe, #ff3355);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .content{
+            padding: 2rem;
+            color: white;
+            background-color: black;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .content p{
+            color: rgba(255, 200, 0, 0.838);
+            /* margin-left: 2rem;
+            margin-right: 2rem; */
+            /* background-color: blue; */
+        }
+        #notify-me{
+            display: flex;
+            flex-direction: column;
+        }
+        input{
+            padding: 0.4rem;
+            border-radius: 3px;
+        }
+        input[type="email"]{
+            margin-bottom: 1rem;
+        }
+        .submit{
+            /* background-color: #dc65c4; */
+            background-color: #fd4765;
+            color: white;
+            transition: background-color 0.2s ease-in-out;
+            box-shadow: 0 4px 6px rgb(0, 0, 0,0.5);
+        }
+        .submit:hover{
+            cursor: pointer;
+            background-color: #ff3355;
+            transform: scaleY(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <img src="images/code_coffee.png" alt="image not found" width="100px">
+            <h1>Coming soon</h1>
+            <p>We're working hard to bring something amazing.<br/> Stay tuned!</p>
+            <form action="" id="notify-me">
+                <input type="email" name="" id="" placeholder="Enter your email">
+                <input type="submit" value="Notify me" class="submit">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

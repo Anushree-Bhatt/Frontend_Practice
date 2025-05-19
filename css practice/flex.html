@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
+        .container{
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        .flex-container{
+            width: 30%;
+            height: 250px;
+            padding: 10px;
+            border: 1px solid black;
+            display: flex;
+        }
+        .circle{
+            margin: 10px;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            border: 1px solid black;
+        }
+        .c1{
+            background-color: darksalmon;
+        }
+        .c2{
+            background-color:aquamarine;
+        }
+        .c3{
+            background-color:aqua;
+        }
+        .c4{
+            background-color:burlywood
+        }
+        .c5{
+            background-color:cornflowerblue
+        }
+        .c6{
+            background-color:coral;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>1. Default Flex (row)</h1>
+        <div class="flex-container">
+            <div class="circle c1">1</div>
+            <div class="circle c2">2</div>
+            <div class="circle c3">3</div>
+            <div class="circle c4">4</div>
+            <div class="circle c5">5</div>
+            <div class="circle c6">6</div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>2. Flex Direction: Column</h1>
+        <div class="flex-container" style="flex-direction: column-reverse;">
+            <div class="circle c1">1</div>
+            <div class="circle c2">2</div>
+            <div class="circle c3">3</div>
+            <div class="circle c4">4</div>
+            <div class="circle c5">5</div>
+            <div class="circle c6">6</div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>3. Justify content: space-between</h1>
+        <div class="flex-container" style="justify-content: space-between;">
+            <div class="circle c1">1</div>
+            <div class="circle c2">2</div>
+            <div class="circle c3">3</div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>4. Align Items: Center</h1>
+        <div class="flex-container" style="align-items:center;">
+            <div class="circle c1">1</div>
+            <div class="circle c2">2</div>
+            <div class="circle c3">3</div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>5. Flex Wrap: wrap</h1>
+        <div class="flex-container" style="flex-wrap: wrap; height: auto;">
+            <div class="circle c1">1</div>
+            <div class="circle c2">2</div>
+            <div class="circle c3">3</div>
+            <div class="circle c4">4</div>
+            <div class="circle c5">5</div>
+            <div class="circle c6">6</div>
+            <div class="circle c2">7</div>
+            <div class="circle c3">8</div>
+            <div class="circle c4">9</div>
+            <div class="circle c4">10</div>
+
+        </div>
+    </div>
+    <div class="container">
+        <h2>6. Align-content: Space-around (with wrap)</h1>
+        <div class="flex-container" style="flex-wrap: wrap; align-content:space-around;">
+            <div class="circle c1">1</div>
+            <div class="circle c2">2</div>
+            <div class="circle c3">3</div>
+            <div class="circle c4">4</div>
+            <div class="circle c5">5</div>
+            <div class="circle c6">6</div>
+            <div class="circle c2">7</div>
+            <div class="circle c3">8</div>
+            <div class="circle c4">9</div>
+            <div class="circle c4">10</div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>7. Order property</h1>
+        <div class="flex-container">
+            <div class="circle c1" style="order:3">1</div>
+            <div class="circle c2" style="order:1">2</div>
+            <div class="circle c3" style="order:5">3</div>
+            <div class="circle c4" style="order:4">4</div>
+            <div class="circle c5" style="order:6">5</div>
+            <div class="circle c6" style="order:2">6</div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>8. Flex Grow</h1>
+        <div class="flex-container">
+            <div class="circle c1" style="flex-grow: 10;">1</div>
+            <div class="circle c2" style="flex-grow: 30;">2</div>
+            <div class="circle c3" style="flex-grow: 25;">3</div>
+            <div class="circle c4" style="flex-grow: 25;">4</div>
+            <div class="circle c5" style="flex-grow: 10;">5</div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>9. Align-self</h1>
+        <div class="flex-container">
+            <div class="circle c1" style="align-self: flex-start;">1</div>
+            <div class="circle c2" style="align-self:flex-end">2</div>
+            <div class="circle c3" style="align-self: center">3</div>
+            <div class="circle c4" style="align-self: stretch; height: auto;">4</div>
+        </div>
+    </div>
+</body>
+</html>
